@@ -25,7 +25,7 @@ Currently seeking **Software Engineering Internships (Frontend, Backend, or Full
 ## 🛠 Tech Stack
 
 ### Languages:
-`C++ (DSA)` • `Python (DSA)` • `JavaScript` • `TypeScript`
+• `Python (DSA)` • `JavaScript` • `TypeScript`
 
 ### Frontend:
 `React.js` • `Next.js` • `Tailwind CSS` • `Vite`
@@ -37,7 +37,7 @@ Currently seeking **Software Engineering Internships (Frontend, Backend, or Full
 `MongoDB` • `MySQL`
 
 ### DevOps & Tools:
-`Git & GitHub` • `Docker` • `VS Code` • `Postman`
+`Git & GitHub` • `Docker` • `VS Code`
 
 ---
 ## 🚀 What Sets Me Apart
