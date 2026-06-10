@@ -47,7 +47,6 @@ Final year student who builds things that hold up in production — live ML pipe
         <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
         <img src="https://img.shields.io/badge/Three.js-000?style=flat-square&logo=threedotjs&logoColor=white"/>
       </p>
-      <a href="https://adpulse-5r4y.onrender.com"><strong>→ Live Demo</strong></a>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/alirizzzv/SENTINEL">🛡 SENTINEL</a></h3>
