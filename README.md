@@ -1,80 +1,83 @@
 <h1 align="center">Ali Husain Rizvi</h1>
 
 <p align="center">
-  Software Engineer in Training | B.Tech in Information Technology (NSUT) | Full-Stack & Systems Developer
+  B.Tech · Information Technology · NSUT Delhi &nbsp;|&nbsp; 2023–2027
 </p>
 
 <p align="center">
-  <a href="https://github.com/alirizzzv">GitHub</a> • 
-  <a href="https://www.linkedin.com/in/ali-rizvi-4628ab286/">LinkedIn</a> • 
-  <a href="mailto:alirizviatwork@gmail.com">Email</a>
+  <a href="https://www.linkedin.com/in/ali-rizvi-4628ab286/">LinkedIn</a> &nbsp;·&nbsp;
+  <a href="mailto:alirizviatwork@gmail.com">Email</a> &nbsp;·&nbsp;
+  <a href="https://leetcode.com/">LeetCode</a>
 </p>
 
 ---
 
-## 👋 About Me
+I build systems where performance constraints are real — sub-5ms inference pipelines, browser-native security engines, real-time auction streams. I care about clean architecture, honest benchmarks, and shipping things that actually work end-to-end.
 
-I’m a pre-final year B.Tech student specializing in **Information Technology at NSUT**, with a strong foundation in data structures, system design fundamentals, and full-stack development.
-
-I enjoy building scalable applications, solving real-world engineering problems, and writing clean, maintainable code. My interests lie in backend systems, performance-driven applications, and applied AI systems.
-
-Currently seeking **Software Engineering Internships (Frontend, Backend, or Full-Stack)** where I can contribute to impactful, production-grade systems.
+Currently a pre-final year student actively looking for **SDE internships** (backend, full-stack, or applied ML).
 
 ---
 
-## 🛠 Tech Stack
+## Projects
 
-### Languages:
-• `Python (DSA)` • `JavaScript` • `TypeScript`
+### [ADPULSE](https://github.com/alirizzzv/ADPULSE) — Real-Time Bidding DSP &nbsp;·&nbsp; [Live Demo](https://adpulse-5r4y.onrender.com)
 
-### Frontend:
-`React.js` • `Next.js` • `Tailwind CSS` • `Vite`
+A full-stack Demand-Side Platform that runs live ad auctions in production. Two LightGBM models (CTR + CVR) price every bid in ~5ms; auction results stream live to an operator dashboard with a 3D RTB globe.
 
-### Backend:
-`Node.js` • `Express.js` • `REST APIs`
+- **ML pipeline:** LightGBM CTR & CVR models with scikit-learn feature scaling, trained on the IPinYou RTB dataset (1.82M impressions)
+- **Hot path:** pure in-memory inference — zero DB calls, zero I/O — achieving sub-5ms bid decisions at 50K+ bids/sec
+- **Data layer:** O(1)-memory streaming reader for multi-GB logs; never loads a file into RAM
+- **Realtime:** Flask-SocketIO broadcasts every auction decision live; Chart.js dashboard + Three.js 3D globe
+- **Deployed:** Dockerised, running on Render with a single `render.yaml`
 
-### Databases:
-`MongoDB` • `MySQL`
-
-### DevOps & Tools:
-`Git & GitHub` • `Docker` • `VS Code`
-
----
-## 🚀 What Sets Me Apart
-
-✅ **Strong DSA & Problem Solving Foundation**  
-Comfortable with C++ STL, competitive programming patterns, and algorithmic optimization.
-
-✅ **End-to-End Development**  
-From frontend UI to backend APIs and database design.
-
-✅ **Engineering Discipline**  
-Focus on modular code, clean architecture, and scalability.
-
-✅ **Continuous Learner**  
-Actively improving in system design, backend engineering, and performance optimization.
+`Python` `LightGBM` `Flask` `Socket.IO` `React.js` `Three.js` `Docker`
 
 ---
 
-## 🧠 Currently Exploring
+### [SENTINEL](https://github.com/alirizzzv/SENTINEL) — AI Prompt Security Gateway &nbsp;·&nbsp; [Live Demo](https://alirizzzv.github.io/SENTINEL/)
 
-- Advanced Data Structures & Competitive Programming  
-- System Design fundamentals  
-- Scalable backend architectures  
-- Docker & deployment workflows  
+A Chrome extension that intercepts prompts before they reach ChatGPT, Claude, or Gemini, detects sensitive data and prompt-injection attempts in-page, and optionally redacts them — all in under 5ms, with nothing stored but anonymised metadata.
 
----
+- **Detection engine:** Aho-Corasick (Trie + BFS failure links) for O(n+m+z) multi-pattern scan — no catastrophic backtracking on adversarial input
+- **Pipeline:** normalise → candidate scan → regex validation + Luhn check → injection detection (3-layer) → max-heap risk scoring → merge-interval redaction
+- **Performance:** p50 of 0.002ms on typical prompts; 2.4ms on 80KB adversarial input
+- **Privacy:** zero network calls in the scan path; prompt text is never stored — only anonymised metadata in a local 500-event ring buffer
+- **Test coverage:** 91 tests (Vitest + pytest) including adversarial corpus and persistence tests
+- **Optional enterprise backend:** FastAPI + Postgres, opt-in, org-scoped
 
-## 📬 Let’s Connect
-
-I’m actively looking for:
-
-- Software Engineering Internships (SDE / Backend / Full-Stack)
-- Open-source collaboration opportunities
-
-📩 **Email:** alirizviatwork@gmail.com  
-🔗 **LinkedIn:** https://www.linkedin.com/in/ali-rizvi-4628ab286/  
+`TypeScript` `React` `Manifest V3` `Aho-Corasick` `Vite` `FastAPI` `Vitest`
 
 ---
 
-> “Engineering is not just about writing code — it’s about building systems that solve real problems efficiently.”
+## Skills
+
+**Languages:** Python · JavaScript · TypeScript · C++ · SQL
+
+**Backend:** Node.js · Express.js · Flask · FastAPI · REST APIs
+
+**Frontend:** React.js · Next.js · Tailwind CSS · Vite
+
+**ML / Data:** LightGBM · scikit-learn · Pandas · NumPy
+
+**Infra & Tools:** Docker · Git · MongoDB · MySQL
+
+**CS Fundamentals:** DSA · OOP · OS · DBMS · Algorithm Design · System Design basics
+
+---
+
+## Education
+
+**B.Tech, Information Technology** — Netaji Subhas University of Technology, Delhi &nbsp;·&nbsp; 2023–2027
+
+- Top 10 percentile, JEE Mains
+- AIR 16,500, VITEEE
+- 91% in CBSE Class XII (PCM)
+- 100% Educational Scholarship (2018–2022) for national-level sports performance
+- 3× Gold Medal, CBSE National Championship
+
+---
+
+<p align="center">
+  <i>Open to SDE internships — backend, full-stack, or applied ML.</i><br/>
+  <a href="mailto:alirizviatwork@gmail.com">alirizviatwork@gmail.com</a>
+</p>
