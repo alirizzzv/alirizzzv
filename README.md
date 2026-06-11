@@ -94,7 +94,7 @@ Final year student who builds things that hold up in production — live ML pipe
 
 **B.Tech, Information Technology — NSUT Delhi** `2023–2027`
 
-- 🏅 Under 10 percentile nationally — **JEE Mains**
+- 🏅 Under top 10 percentile nationally — **JEE Mains**
 - 📊 **91%** in CBSE Class XII, distinction in PCM
 - 🏆 **3× Gold Medallist** — CBSE National Championship (Athletics)
 - 🎓 **100% Educational Scholarship** (2018–2022) for national-level sports performance
